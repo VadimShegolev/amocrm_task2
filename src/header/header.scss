@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.main_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_logo {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+
+.header_logo-description {
+    color: #E4E5EA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+.header_item {
+    margin: 0 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_phone {
+    margin-right: 30px;
+}
+
+.header-social {
+    > img {
+        margin: 0 10px;
+    }
+}
+
+@media(max-width: 800px){
+    .main_header {
+        justify-content: center;
+        background-color: #0E1014;
+        margin: 0;
+        padding: 30px;
+    }
+    .header_logo {
+        display: none;
+    }
+    .header-right {
+        display: none;
+    }
+    .header_item {
+        margin: 0 10px;
+    }
+    .cetrificates {
+        display: none;
+    }
+    .header-left {
+        width: 100%;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+}
